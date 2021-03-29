@@ -1,0 +1,24 @@
+{
+  "name": "lembasfoods",
+  "version": "0.0.0",
+  "description": "",
+  "license": "CC0",
+  "private": true,
+  "scripts": {
+    "build": "parcel build --dist-dir . --public-url . --no-source-maps --no-optimize --no-cache src/index.html; rm -rf .parcel-cache"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "ie >= 10",
+    "> 1%"
+  ],
+  "dependencies": {
+    "sanitize.css": "^12.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.8"
+  }
+}
