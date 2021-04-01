@@ -159,3 +159,10 @@ p.introduction {
 .with-amount .measure > .percentage {
 	display: none;
 }
+
+p.request {
+	font-size: 1rem;
+	margin: 4rem 0 3rem;
+	text-align: center;
+	opacity: 0.8;
+}
