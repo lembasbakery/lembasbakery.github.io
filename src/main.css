@@ -166,3 +166,9 @@ p.request {
 	text-align: center;
 	opacity: 0.8;
 }
+
+@media print {
+	p.request {
+		display: none;
+	}
+}
