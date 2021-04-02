@@ -13,7 +13,7 @@ body {
 
 @media (max-width: 48rem) {
 	body {
-		padding: 1 1.65rem;
+		padding: 1rem 1.65rem;
 	}
 }
 
@@ -65,12 +65,13 @@ ul {
 p.introduction {
 	text-align: center;
 	line-height: 1.2;
-	margin: 8rem 1rem;
-	font-size: 1.75rem;
+	margin: 8rem 0rem;
+	font-size: 1.5rem;
 }
 
 @media (min-width: 32rem) {
 	p.introduction {
+		font-size: 1.75rem;
 		margin: 8rem 4rem;
 		font-size: 2rem;
 	}
@@ -104,6 +105,8 @@ p.introduction {
 .ingredients > .header > .name,
 .nutrients > .header > .name {
 	font-weight: bold;
+	white-space: nowrap;
+	margin-right: 1rem;
 }
 
 .ingredients > .ingredient,
@@ -133,6 +136,7 @@ p.introduction {
 
 .unit-selector > .option {
 	transition: opacity 0.1s;
+	white-space: nowrap;
 	cursor: pointer;
 	opacity: 0.6;
 }
