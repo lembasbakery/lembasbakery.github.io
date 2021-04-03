@@ -720,11 +720,6 @@ p.introduction {
 	text-align: right;
 }
 
-.ingredients > .footer,
-.nutrients > .footer {
-	font-weight: bold;
-}
-
 .unit-selector > .divider {
 	opacity: 0.4;
 }
@@ -737,8 +732,12 @@ p.introduction {
 	opacity: 0.6;
 }
 
+.unit-selector > .option.active {
+	pointer-events: none;
+}
+
 .unit-selector > .option:hover,
-.unit-selector > .active {
+.unit-selector > .option.active {
 	opacity: 1;
 }
 
@@ -1140,7 +1139,7 @@ p.request {
 			</div>
 
 			<div class="ingredient">
-				<span class="name">Sunflower oil <em><small>normal, not high oleic</small></em></span>
+				<span class="name">Sunflower oil <em><small>normal, not high-oleic</small></em></span>
 				<span class="measure">
 					<span class="price">
 						<span class="unit">£</span>
@@ -1165,11 +1164,11 @@ p.request {
 						<span class="number">0.00</span>
 					</span>
 					<span class="weight">
-						<span class="number">140</span>
+						<span class="number">180</span>
 						<span class="unit">ml</span>
 					</span>
 					<span class="volume">
-						<span class="number">&frac23;</span>
+						<span class="number">&frac34;</span>
 						<span class="unit">cup</span>
 					</span>
 				</span>
@@ -1178,10 +1177,13 @@ p.request {
 			<div class="footer">
 				<span class="name"></span>
 				<span class="measure">
-					<span class="price">
+					<strong class="price">
 						<span class="unit">£</span>
 						<span class="number">1.48</span>
-					</span>
+					</strong>
+					<small class="volume">
+						<em class="unit">US sizes</em>
+					</small>
 				</span>
 			</div>
 		</div>
@@ -1371,8 +1373,8 @@ p.request {
 			</li>
 
 			<li>
-				When the flax seeds have sat for around 5 minutes, add them to
-				the bowl with the oil and water. Don't add all the water at once,
+				When the flax seeds have sat for at least a few minutes, add them
+				to the bowl with the oil and water. Don't add all the water at once,
 				in case not all of it is required.
 			</li>
 

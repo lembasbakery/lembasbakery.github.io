@@ -125,11 +125,6 @@ p.introduction {
 	text-align: right;
 }
 
-.ingredients > .footer,
-.nutrients > .footer {
-	font-weight: bold;
-}
-
 .unit-selector > .divider {
 	opacity: 0.4;
 }
@@ -141,8 +136,12 @@ p.introduction {
 	opacity: 0.6;
 }
 
+.unit-selector > .option.active {
+	pointer-events: none;
+}
+
 .unit-selector > .option:hover,
-.unit-selector > .active {
+.unit-selector > .option.active {
 	opacity: 1;
 }
 
