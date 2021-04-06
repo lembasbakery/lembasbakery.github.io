@@ -715,8 +715,18 @@ p.introduction {
 	padding-bottom: 0;
 }
 
+.ingredient > .name,
+.nutrient > .name {
+	margin-right: 1rem;
+}
+
 .ingredient > .measure,
 .nutrient > .measure {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.unit-selector {
 	text-align: right;
 }
 
@@ -789,10 +799,8 @@ p.request {
 				<span class="name">ingredients</span>
 				<span class="unit-selector">
 					<span class="option">price</span>
-					<span class="divider">/</span>
-					<span class="option">volume</span>
-					<span class="divider">/</span>
-					<span class="option active">weight</span>
+					<span class="divider">/</span>&nbsp;<span class="option">volume</span>
+					<span class="divider">/</span>&nbsp;<span class="option active">weight</span>
 				</span>
 			</div>
 
@@ -1429,8 +1437,7 @@ p.request {
 				<span class="name">nutrients</span>
 				<span class="unit-selector">
 					<span class="option">amount</span>
-					<span class="divider">/</span>
-					<span class="option active">percentage</span>
+					<span class="divider">/</span>&nbsp;<span class="option active">percentage</span>
 				</span>
 			</div>
 

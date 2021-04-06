@@ -120,8 +120,18 @@ p.introduction {
 	padding-bottom: 0;
 }
 
+.ingredient > .name,
+.nutrient > .name {
+	margin-right: 1rem;
+}
+
 .ingredient > .measure,
 .nutrient > .measure {
+	text-align: right;
+	white-space: nowrap;
+}
+
+.unit-selector {
 	text-align: right;
 }
 
